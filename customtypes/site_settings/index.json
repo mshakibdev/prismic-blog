@@ -1,0 +1,56 @@
+{
+  "format": "custom",
+  "id": "site_settings",
+  "json": {
+    "Main": {
+      "site_name": {
+        "type": "Text",
+        "config": {
+          "label": "Site name",
+          "useAsTitle": true
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Site description"
+        }
+      },
+      "eyebrow": {
+        "type": "Text",
+        "config": {
+          "label": "Homepage eyebrow"
+        }
+      },
+      "intro_title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Homepage heading",
+          "single": "heading1"
+        }
+      },
+      "intro_description": {
+        "type": "Text",
+        "config": {
+          "label": "Homepage introduction"
+        }
+      },
+      "footer_text": {
+        "type": "Text",
+        "config": {
+          "label": "Footer text"
+        }
+      },
+      "meta_image": {
+        "type": "Image",
+        "config": {
+          "label": "Default social sharing image",
+          "thumbnails": []
+        }
+      }
+    }
+  },
+  "label": "Site Settings",
+  "repeatable": false,
+  "status": true
+}

@@ -1,0 +1,127 @@
+{
+  "format": "page",
+  "id": "blog_post",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "URL slug"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "single": "heading1"
+        }
+      },
+      "featured_image": {
+        "type": "Image",
+        "config": {
+          "label": "Featured image",
+          "thumbnails": []
+        }
+      },
+      "excerpt": {
+        "type": "Text",
+        "config": {
+          "label": "Excerpt"
+        }
+      },
+      "author": {
+        "type": "Link",
+        "config": {
+          "label": "Author",
+          "select": "document",
+          "customtypes": [
+            {
+              "id": "author",
+              "fields": [
+                "name",
+                "avatar",
+                "bio"
+              ]
+            }
+          ]
+        }
+      },
+      "category": {
+        "type": "Link",
+        "config": {
+          "label": "Category",
+          "select": "document",
+          "customtypes": [
+            {
+              "id": "category",
+              "fields": [
+                "name",
+                "description"
+              ]
+            }
+          ]
+        }
+      },
+      "publish_date": {
+        "type": "Date",
+        "config": {
+          "label": "Publish date"
+        }
+      },
+      "featured": {
+        "type": "Boolean",
+        "config": {
+          "label": "Feature on the blog homepage",
+          "default_value": false
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Article content",
+        "config": {
+          "choices": {
+            "hero": {
+              "type": "SharedSlice"
+            },
+            "rich_text": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "quote": {
+              "type": "SharedSlice"
+            },
+            "call_to_action": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "SEO title"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "SEO description"
+        }
+      },
+      "meta_image": {
+        "type": "Image",
+        "config": {
+          "label": "Social sharing image",
+          "thumbnails": []
+        }
+      }
+    }
+  },
+  "label": "Blog Post",
+  "repeatable": true,
+  "status": true
+}

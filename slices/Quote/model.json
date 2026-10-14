@@ -1,0 +1,30 @@
+{
+  "id": "quote",
+  "name": "Quote",
+  "type": "SharedSlice",
+  "variations": [
+    {
+      "description": "Default",
+      "docURL": "",
+      "id": "default",
+      "imageUrl": "",
+      "name": "Default",
+      "primary": {
+        "quote": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Quote",
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "attribution": {
+          "type": "Text",
+          "config": {
+            "label": "Attribution"
+          }
+        }
+      },
+      "version": ""
+    }
+  ]
+}

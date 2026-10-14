@@ -1,0 +1,45 @@
+{
+  "id": "call_to_action",
+  "name": "Call To Action",
+  "type": "SharedSlice",
+  "variations": [
+    {
+      "description": "Default",
+      "docURL": "",
+      "id": "default",
+      "imageUrl": "",
+      "name": "Default",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "single": "heading1"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Destination",
+            "allowText": true,
+            "allowTargetBlank": true
+          }
+        },
+        "button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Button label"
+          }
+        }
+      },
+      "version": ""
+    }
+  ]
+}
