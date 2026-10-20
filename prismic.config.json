@@ -1,4 +1,9 @@
 {
   "repositoryName": "prismic-tiny-blog",
-  "routes": []
+  "routes": [
+    {
+      "type": "blog_post",
+      "path": "/blog/:uid"
+    }
+  ]
 }
